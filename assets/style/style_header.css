@@ -1,0 +1,19 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .menu ul {
+    margin-right: 20px;
+}
+
+header .menu ul a {
+    text-decoration: none;
+    color: rgb(245, 10, 10);
+}
+
+.logo {
+    margin-left: 150px;
+}

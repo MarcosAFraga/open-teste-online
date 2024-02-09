@@ -1,0 +1,23 @@
+.icone i{
+    width: 32px;
+    margin-right: 20px;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .icone:hover  {
+    transform: translateY(-5px);
+    /* Move 5px para cima */
+  }
+
+  footer {
+    background-color: rgba(2, 2, 88, 0.103);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px red;
+  }
+
+  footer a {
+    text-decoration: none;
+  }
+  
