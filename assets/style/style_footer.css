@@ -1,34 +1,47 @@
-.icone i{
-    width: 32px;
-    margin-right: 20px;
-    transition: transform 0.4s ease-in-out;
-  }
+.icone i {
+  width: 32px;
+  margin-right: 20px;
+  transition: transform 0.4s ease-in-out;
+}
 
-  .icone:hover  {
-    transform: translateY(-5px);
-    /* Move 5px para cima */
-  }
+.icone:hover {
+  transform: translateY(-5px);
+  /* Move 5px para cima */
+}
 
-  footer {
-    background-color: rgba(2, 2, 88, 0.103);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px red;
-  }
+footer {
+  background-color: rgba(2, 2, 88, 0.103);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px red;
+}
 
-  footer a {
-    text-decoration: none;
-  }
-  
-  /* Adicionando estilos para a mensagem de construção */
+footer a {
+  text-decoration: none;
+}
+
+/* Adicionando estilos para a mensagem de construção */
 .construction-message {
-  background-color: #ffcc00; /* Cor de fundo amarelo para chamar atenção */
-  color: #333; /* Cor do texto */
+  background-color: #ffcc00;
+  /* Cor de fundo amarelo para chamar atenção */
+  color: #333;
+  /* Cor do texto */
   text-align: center;
   padding: 10px;
   font-size: 18px;
   font-weight: bold;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar a mensagem */
-  margin-bottom: 20px; /* Espaço entre a mensagem e o conteúdo principal */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Sombra para destacar a mensagem */
+  margin-bottom: 20px;
+  /* Espaço entre a mensagem e o conteúdo principal */
+}
+
+.GIF {
+ text-align: center;
+}
+
+.GIF img {
+  width: 18%; 
+
 }
