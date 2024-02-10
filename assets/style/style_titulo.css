@@ -11,7 +11,7 @@
 .cabecalho {
     width: 100%;
     float: left;
-}
+}   
 
 .box-texto span {
     display: block;
@@ -34,7 +34,7 @@
 
 .descricao {
     font-size: 1.5em;
-    color: #1B75BA;
+    color: red;
     font-family: 'open_sansregular';
     letter-spacing: 26px;
     transition: 6s;

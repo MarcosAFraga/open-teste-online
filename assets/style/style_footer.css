@@ -21,3 +21,14 @@
     text-decoration: none;
   }
   
+  /* Adicionando estilos para a mensagem de construção */
+.construction-message {
+  background-color: #ffcc00; /* Cor de fundo amarelo para chamar atenção */
+  color: #333; /* Cor do texto */
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar a mensagem */
+  margin-bottom: 20px; /* Espaço entre a mensagem e o conteúdo principal */
+}

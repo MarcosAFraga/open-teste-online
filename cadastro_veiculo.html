@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodePel">
+    <title> O.T. - Cadastro Veiculos </title>
+    <link rel="stylesheet" href="assets/style/style_menu.css">
+    <link rel="stylesheet" href="assets/style/style_cadastro.css">
+    <link rel="stylesheet" href="assets/style/style_body.css">
+    <link rel="stylesheet" href="assets/style/style_titulo.css">
+    <link rel="stylesheet" href="assets/style/style_footer.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
+</head>
+
+<body>
+    <nav class="menu-lateral">
+        <div class="sidebar close">
+            <section class="logo-details">
+                <div class="home-content">
+                    <i class='bx bx-menu'></i>
+                    <span class="logo_name"></span>
+                </div>
+            </section>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        <i class='bx bxs-home'></i>
+                        <span class="link_name">Home</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="index.html">Home</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-grid-alt'></i>
+                            <span class="link_name">Dashboard</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Dashboard</a></li>
+                        <li><a href="#">Distribuidora</a></li>
+                        <li><a href="#">Delyveri</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <i class='bx bx-user-pin'></i>
+                        <span class="link_name">Login</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="login.html">Login</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="localizacao.html">
+                        <i class='bx bxs-map'></i>
+                        <span class="link_name">Localização</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="localizacao.html">Localização</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-trip'></i>
+                        <span class="link_name">Rota</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Rota</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-report'></i>
+                        <span class="link_name">Relatório</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Relatório</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="separacao.html">
+                        <i class='bx bx-columns'></i>
+                        <span class="link_name">Separação</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="separacao.html">Separação</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-add-to-queue'></i>
+                            <span class="link_name">Cadastros</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name">Cadastros</a></li>
+                        <li><a href="cadastro_cliente.html">Cliente</a></li>
+                        <li><a href="cadastro_fornecedor.html">Fornecedor</a></li>
+                        <li><a href="cadastro_veiculo.html">Veículo</a></li>
+                        <li><a href="cadastro_usuario.html">Usuario</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-truck'></i>
+                        <span class="link_name">Veículos</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Veículos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-user-rectangle'></i>
+                        <span class="link_name">Clientes</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Clientes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog'></i>
+                        <span class="link_name">Configuração</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Configuração</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!---------------------------------------------------Tela------------------------------------------------------->
+    <div class="box-texto">
+        <h1 class="title">Cadastro de Veiculo</h1>
+        <span class="descricao">Open Technology</span>
+    </div>
+
+    <div id="cliente" class="cadastro-cliente">
+        <div class="page">
+            <!-- Campo de Nome -->
+            <div class="field field_v1">
+                <label for="nome" class="ha-screen-reader">Nome do cliente</label>
+                <input id="nome" type="text" class="field__input" placeholder="Ex: Open Technology ">
+                <span class="field__label-wrap" aria-hidden="true"></span>
+            </div>
+            <!-- Campo de Razão Social -->
+            <div class="field field_v1">
+                <label for="razao-social" class="ha-screen-reader">Razão social</label>
+                <input id="razao-social" type="text" class="field__input" placeholder="Ex: Open Technology ">
+                <span class="field__label-wrap" aria-hidden="true"></span>
+            </div>
+            <!--Campo de seleção CFF e CNPJ-->
+            <div class="field field_v1">
+                <label>Tipo de Documento</label>
+                <input type="radio" name="tipoDocumento" id="cpf" value="cpf" checked>
+                <label for="cpf">CPF</label>
+                <input type="radio" name="tipoDocumento" id="cnpj" value="cnpj">
+                <label for="cnpj">CNPJ</label>
+            </div>
+            <!-- Campo de digitação de CPF-->
+            <div class="field field_v1">
+                <label for="cpf" class="ha-screen-reader"required style="display: none;">CPF</label>
+                <input id="cpf-input" type="text" maxlength="14" class="field__input" placeholder="Ex: 123.456.789-00"
+                    name="cpf" required style="display: none;">
+                <span class="field__label-wrap" aria-hidden="true"></span>
+            </div>
+            <!-- Campo de digitação de CNPJ-->
+            <div class="field field_v1">
+                <label for="cnpj" class="ha-screen-reader"required style="display: none;">CNPJ</label>
+                <input id="cnpj-input" type="text" maxlength="14" class="field__input"
+                    placeholder="Ex: 12.345.678/0001-00" name="cnpj"required style="display: none;">
+                <span class="field__label-wrap" aria-hidden="true"></span>
+            </div>
+        </div>
+        <div class="page">
+            <!-- Campos de Endereço -->
+            <fieldset class="endereco">
+                <div class="field field_v1">
+                    <label for="endereco" class="ha-screen-reader">Endereço</label>
+                    <input id="endereco" type="text" class="field__input" placeholder="Ex: Rua: João Pedro">
+                    <span class="field__label-wrap" aria-hidden="true"></span>
+                </div>
+                <!-- Campo de Número -->
+                <div class="field field_v1">
+                    <label for="numero" class="ha-screen-reader">Número</label>
+                    <div class="field__input-wrap">
+                        <input id="numero" type="number" class="field__input" placeholder="Ex: 559">
+                    </div>
+                    <span class="field__label-wrap" aria-hidden="true"></span>
+                </div>
+                <!-- Campo de Bairro -->
+                <div class="field field_v1">
+                    <label for="bairro" class="ha-screen-reader">Bairro</label>
+                    <input id="bairro" type="text" class="field__input" placeholder="Ex: Jardim Carandai">
+                    <span class="field__label-wrap" aria-hidden="true"></span>
+                </div>
+                <!-- Campos de Cidade -->
+                <div class="field field_v1">
+                    <label for="cidade" class="ha-screen-reader">Cidade</label>
+                    <input id="cidade" type="text" class="field__input" placeholder="Ex: Biguaçu">
+                    <span class="field__label-wrap" aria-hidden="true"></span>
+                </div>
+                <!-- Campos de Estado -->
+                <div class="estado">
+                    <label for="estado"><strong>Estado</strong></label>
+                    <select id="estado" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>SC</option>
+                        <option>PR</option>
+                        <option>RS</option>
+                    </select>
+                </div>
+                <!-- Campos de CEP -->
+                <div class="field field_v1">
+                    <label for="cep" class="ha-screen-reader">CEP</label>
+                    <input id="cep" type="number" class="field__input" placeholder="Ex: 88160-000">
+                    <span class="field__label-wrap" aria-hidden="true"></span>
+                </div>
+                <!-- Campos de Localização -->
+                <div class="field field_v1">
+                    <label for="localizacao" class="ha-screen-reader">Localização</label>
+                    <input id="localizacao" type="url" class="field__input"
+                        placeholder="Ex: https://maps.app.goo.gl/zvqRRLHQW6NSFQst5">
+                    <span class="field__label-wrap" aria-hidden="true"></span>
+                </div>
+            </fieldset>
+            <!-- Campo de Complemento -->
+            <div class="field field_v1">
+                <label for="complemento" class="ha-screen-reader">Complemento</label>
+                <input id="complemento" type="text" class="field__input" placeholder="Ex: Ao lado da clinica ">
+                <span class="field__label-wrap" aria-hidden="true"></span>
+            </div>
+        </div>
+        <div class="page">
+            <!-- Campos de Telefone e E-mail -->
+            <div class="field field_v1">
+                <label for="telefone" class="ha-screen-reader">Telefone</label>
+                <input id="telefone" type="tel" class="field__input" placeholder="(48) 9 9999 8888">
+                <span class="field__label-wrap" aria-hidden="true"></span>
+            </div>
+            <!-- Email -->
+            <div class="field field_v1">
+                <label for="email" class="ha-screen-reader">E-mail</label>
+                <input id="email" type="email" class="field__input" placeholder="Loading_Technology@e   mail.com">
+                <span class="field__label-wrap" aria-hidden="true"></span>
+            </div>
+        </div>
+        <!-- Segunda seção do formulário -->
+        <div class="page">
+            <h2>Horário de recebimento</h2>
+            <!-- Campos de Horário de Recebimento -->
+            <fieldset class="recebimento">
+                <div class="field-group">
+                    <h3>Manhã</h3>
+                    <div class="field field_v1">
+                        <label for="inicio1" class="ha-screen-reader">Início</label>
+                        <input id="inicio1" type="time" class="field__input" placeholder="Horário de início">
+                        <span class="field__label-wrap" aria-hidden="true"></span>
+                    </div>
+                    <div class="field field_v1">
+                        <label for="termino1" class="ha-screen-reader">Término</label>
+                        <input id="termino1" type="time" class="field__input" placeholder="Horário de término">
+                        <span class="field__label-wrap" aria-hidden="true">
+                            <span class="field__label">Término</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <h3>Tarde</h3>
+                    <div class="field field_v1">
+                        <label for="inicio2" class="ha-screen-reader">Início</label>
+                        <input id="inicio2" type="time" class="field__input" placeholder="Horário de início">
+                        <span class="field__label-wrap" aria-hidden="true"></span>
+                    </div>
+                    <div class="field field_v1">
+                        <label for="termino2" class="ha-screen-reader">Término</label>
+                        <input id="termino2" type="time" class="field__input" placeholder="Horário de término">
+                        <span class="field__label-wrap" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </fieldset>
+            <button id="btn" class="btn" type="submit" onclick="cadastrarCliente()">Cadastrar</button>
+            <button id="btn" class="btn" type="submit" onclick="cadastrarCliente()">Editar</button>
+            <button id="btn" class="btn" type="submit" onclick="cadastrarCliente()">Excluir</button>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div id="endereco">
+            <h3>Endereço:</h3>
+            <p>Rua Manoel Mariano Ferreira, 559</p>
+            <p>Rio Caveiras, Biguaçu - SC</p>
+            <p>CEP: 88161-680</p>
+
+            <div id="minhas-redes">
+
+                <a href="#" target="_blank">
+                    <img src="assets/img/linkedin-jpg.png" alt="linkedin" class="icone">
+                </a>
+
+                <a href="#" target="_blank">
+                    <img src="assets/img/facebook-jpg.png" alt="Facebook" class="icone">
+                </a>
+
+                <a href="#" target="_blank">
+                    <img src="assets/img/instagram-jpg.png" alt="Instagram" class="icone">
+                </a>
+
+                <a href="#" target="_blank">
+                    <img src="assets/img/map-jpg.png" alt="Localizaçõa" class="icone">
+                </a>
+
+                <a href="https://wa.me/+5548996534206?text=Ol%C3%A1%2C%20entrei%20em%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%3F"
+                    target="_blank">
+                    <img src="assets/img/whatsapp-jpg.png" alt="WhatsApp" class="icone">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/JS/script_abrir_menu.js"></script>
+    <script src="assets/JS/script_CPF_CNPJ.js"></script>
+    <script src="assets/JS/script_titulos.js"></script>
+    <script src="assets/JS/script_fotos.js"></script>
+</body>
+
+</html>
