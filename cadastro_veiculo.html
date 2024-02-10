@@ -144,156 +144,83 @@
         <span class="descricao">Open Technology</span>
     </div>
 
-    <div id="cliente" class="cadastro-cliente">
+    <div id="veiculo" class="cadastro-veiculo">
         <div class="page">
-            <!-- Campo de Nome -->
-            <div class="field field_v1">
-                <label for="nome" class="ha-screen-reader">Nome do cliente</label>
-                <input id="nome" type="text" class="field__input" placeholder="Ex: Open Technology ">
-                <span class="field__label-wrap" aria-hidden="true"></span>
-            </div>
-            <!-- Campo de Razão Social -->
-            <div class="field field_v1">
-                <label for="razao-social" class="ha-screen-reader">Razão social</label>
-                <input id="razao-social" type="text" class="field__input" placeholder="Ex: Open Technology ">
-                <span class="field__label-wrap" aria-hidden="true"></span>
-            </div>
-            <!--Campo de seleção CFF e CNPJ-->
-            <div class="field field_v1">
-                <label>Tipo de Documento</label>
-                <input type="radio" name="tipoDocumento" id="cpf" value="cpf" checked>
-                <label for="cpf">CPF</label>
-                <input type="radio" name="tipoDocumento" id="cnpj" value="cnpj">
-                <label for="cnpj">CNPJ</label>
-            </div>
-            <!-- Campo de digitação de CPF-->
-            <div class="field field_v1">
-                <label for="cpf" class="ha-screen-reader"required style="display: none;">CPF</label>
-                <input id="cpf-input" type="text" maxlength="14" class="field__input" placeholder="Ex: 123.456.789-00"
-                    name="cpf" required style="display: none;">
-                <span class="field__label-wrap" aria-hidden="true"></span>
-            </div>
-            <!-- Campo de digitação de CNPJ-->
-            <div class="field field_v1">
-                <label for="cnpj" class="ha-screen-reader"required style="display: none;">CNPJ</label>
-                <input id="cnpj-input" type="text" maxlength="14" class="field__input"
-                    placeholder="Ex: 12.345.678/0001-00" name="cnpj"required style="display: none;">
-                <span class="field__label-wrap" aria-hidden="true"></span>
-            </div>
-        </div>
-        <div class="page">
-            <!-- Campos de Endereço -->
-            <fieldset class="endereco">
-                <div class="field field_v1">
-                    <label for="endereco" class="ha-screen-reader">Endereço</label>
-                    <input id="endereco" type="text" class="field__input" placeholder="Ex: Rua: João Pedro">
-                    <span class="field__label-wrap" aria-hidden="true"></span>
-                </div>
-                <!-- Campo de Número -->
-                <div class="field field_v1">
-                    <label for="numero" class="ha-screen-reader">Número</label>
-                    <div class="field__input-wrap">
-                        <input id="numero" type="number" class="field__input" placeholder="Ex: 559">
-                    </div>
-                    <span class="field__label-wrap" aria-hidden="true"></span>
-                </div>
-                <!-- Campo de Bairro -->
-                <div class="field field_v1">
-                    <label for="bairro" class="ha-screen-reader">Bairro</label>
-                    <input id="bairro" type="text" class="field__input" placeholder="Ex: Jardim Carandai">
-                    <span class="field__label-wrap" aria-hidden="true"></span>
-                </div>
-                <!-- Campos de Cidade -->
-                <div class="field field_v1">
-                    <label for="cidade" class="ha-screen-reader">Cidade</label>
-                    <input id="cidade" type="text" class="field__input" placeholder="Ex: Biguaçu">
-                    <span class="field__label-wrap" aria-hidden="true"></span>
-                </div>
-                <!-- Campos de Estado -->
+            <!-- Campos de especificação do veículo -->
+            <fieldset class="especificacao">
                 <div class="estado">
-                    <label for="estado"><strong>Estado</strong></label>
-                    <select id="estado" required>
-                        <option selected disabled value="">Selecione</option>
-                        <option>SC</option>
-                        <option>PR</option>
-                        <option>RS</option>
+                    <label for="tipoVeiculo"><strong>Tipo de Veículo</strong></label>
+                    <select id="tipoVeiculo" required>
+                        <option selected disabled value="">Selecione o tipo de veículo</option>
+                        <option>Reboque</option>
+                        <option>Carroceria</option>
+                        <option>Bau</option>
+                        <option>Tanque</option>
                     </select>
                 </div>
-                <!-- Campos de CEP -->
-                <div class="field field_v1">
-                    <label for="cep" class="ha-screen-reader">CEP</label>
-                    <input id="cep" type="number" class="field__input" placeholder="Ex: 88160-000">
-                    <span class="field__label-wrap" aria-hidden="true"></span>
-                </div>
-                <!-- Campos de Localização -->
-                <div class="field field_v1">
-                    <label for="localizacao" class="ha-screen-reader">Localização</label>
-                    <input id="localizacao" type="url" class="field__input"
-                        placeholder="Ex: https://maps.app.goo.gl/zvqRRLHQW6NSFQst5">
-                    <span class="field__label-wrap" aria-hidden="true"></span>
-                </div>
-            </fieldset>
-            <!-- Campo de Complemento -->
-            <div class="field field_v1">
-                <label for="complemento" class="ha-screen-reader">Complemento</label>
-                <input id="complemento" type="text" class="field__input" placeholder="Ex: Ao lado da clinica ">
-                <span class="field__label-wrap" aria-hidden="true"></span>
-            </div>
-        </div>
-        <div class="page">
-            <!-- Campos de Telefone e E-mail -->
-            <div class="field field_v1">
-                <label for="telefone" class="ha-screen-reader">Telefone</label>
-                <input id="telefone" type="tel" class="field__input" placeholder="(48) 9 9999 8888">
-                <span class="field__label-wrap" aria-hidden="true"></span>
-            </div>
-            <!-- Email -->
-            <div class="field field_v1">
-                <label for="email" class="ha-screen-reader">E-mail</label>
-                <input id="email" type="email" class="field__input" placeholder="Loading_Technology@e   mail.com">
-                <span class="field__label-wrap" aria-hidden="true"></span>
-            </div>
-        </div>
-        <!-- Segunda seção do formulário -->
-        <div class="page">
-            <h2>Horário de recebimento</h2>
-            <!-- Campos de Horário de Recebimento -->
-            <fieldset class="recebimento">
-                <div class="field-group">
-                    <h3>Manhã</h3>
-                    <div class="field field_v1">
-                        <label for="inicio1" class="ha-screen-reader">Início</label>
-                        <input id="inicio1" type="time" class="field__input" placeholder="Horário de início">
-                        <span class="field__label-wrap" aria-hidden="true"></span>
-                    </div>
-                    <div class="field field_v1">
-                        <label for="termino1" class="ha-screen-reader">Término</label>
-                        <input id="termino1" type="time" class="field__input" placeholder="Horário de término">
-                        <span class="field__label-wrap" aria-hidden="true">
-                            <span class="field__label">Término</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="field-group">
-                    <h3>Tarde</h3>
-                    <div class="field field_v1">
-                        <label for="inicio2" class="ha-screen-reader">Início</label>
-                        <input id="inicio2" type="time" class="field__input" placeholder="Horário de início">
-                        <span class="field__label-wrap" aria-hidden="true"></span>
-                    </div>
-                    <div class="field field_v1">
-                        <label for="termino2" class="ha-screen-reader">Término</label>
-                        <input id="termino2" type="time" class="field__input" placeholder="Horário de término">
-                        <span class="field__label-wrap" aria-hidden="true"></span>
-                    </div>
-                </div>
-            </fieldset>
-            <button id="btn" class="btn" type="submit" onclick="cadastrarCliente()">Cadastrar</button>
-            <button id="btn" class="btn" type="submit" onclick="cadastrarCliente()">Editar</button>
-            <button id="btn" class="btn" type="submit" onclick="cadastrarCliente()">Excluir</button>
-        </div>
 
+                <div class="estado">
+                    <label for="marca"><strong>Marca do Veículo</strong></label>
+                    <select id="marca" required>
+                        <option selected disabled value="">Selecione a marca do veículo</option>
+                        <option>Chevrolet</option>
+                        <option>DAF</option>
+                        <option>Fiat</option>
+                        <option>Ford</option>
+                        <option>Honda (motos)</option>
+                        <option>Hyundai</option>
+                        <option>Kia</option>
+                        <option>Mercedes-Benz</option>
+                        <option>Scania</option>
+                        <option>Volksvagen</option>
+                        <option>Volvo</option>
+                        <option>Yamaha (motos)</option>
+                    </select>
+                </div>
 
+                <div class="estado">
+                    <label for="modelo"><strong>Modelo do Veículo</strong></label>
+                    <select id="modelo" required>
+                        <!-- Os modelos serão adicionados dinamicamente aqui com JavaScript -->
+                    </select>
+                </div>
+
+                <div class="ano">
+                    <label for="ano"><strong>Ano do Veículo</strong></label>
+                    <input id="ano" type="number" class="field__input" placeholder="Ex: 2022" required>
+                </div>
+
+                <div class="peso">
+                    <label for="peso"><strong>Peso do Veículo (kg)</strong></label>
+                    <input id="peso" type="number" class="field__input" placeholder="Ex: 1500" required>
+                </div>
+
+                <div class="num-eixos">
+                    <label for="numEixos"><strong>Número de Eixos</strong></label>
+                    <input id="numEixos" type="number" class="field__input" placeholder="Ex: 2" required>
+                </div>
+
+                <div class="cor">
+                    <label for="cor"><strong>Cor do Veículo</strong></label>
+                    <input id="cor" type="text" class="field__input" placeholder="Ex: Azul" required>
+                </div>
+
+                <div class="quilometragem">
+                    <label for="quilometragem"><strong>Quilometragem do Veículo</strong></label>
+                    <input id="quilometragem" type="number" class="field__input" placeholder="Ex: 50000" required>
+                </div>
+
+                <div class="num-chassi">
+                    <label for="numChassi"><strong>Número de Chassi</strong></label>
+                    <input id="numChassi" type="text" class="field__input" placeholder="Ex: ABC123456DEF789" required>
+                </div>
+
+                <button id="btn" class="btn" type="submit" onclick="cadastrarCliente()">Cadastrar</button>
+                <button id="btn" class="btn" type="submit" onclick="cadastrarCliente()">Editar</button>
+                <button id="btn" class="btn" type="submit" onclick="cadastrarCliente()">Excluir</button>
+            </fieldset>
+
+        </div>
     </div>
 
     <footer>
@@ -332,6 +259,7 @@
     <script src="assets/JS/script_CPF_CNPJ.js"></script>
     <script src="assets/JS/script_titulos.js"></script>
     <script src="assets/JS/script_fotos.js"></script>
+    <script src="assets/JS/script_veiculos.js"></script>
 </body>
 
 </html>
